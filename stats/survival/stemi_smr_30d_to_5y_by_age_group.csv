@@ -1,0 +1,6 @@
+Endpoint,Age Group,N Patients,Observed Deaths,Expected Deaths,SMR,SMR 95% CI Lower,SMR 95% CI Upper,P-value,Significant,Mean Age,Male %
+Landmark 30d-5y mortality,55-64,354,9,4.0,2.24,1.03,4.26,0.0433,Yes,59.5,79.9
+Landmark 30d-5y mortality,65-74,289,24,9.0,2.67,1.71,3.97,0.0,Yes,69.4,74.4
+Landmark 30d-5y mortality,75-84,164,20,13.3,1.5,0.92,2.32,0.1053,No,78.8,65.2
+Landmark 30d-5y mortality,<55,356,6,1.6,3.84,1.41,8.35,0.0108,Yes,47.7,84.8
+Landmark 30d-5y mortality,≥85,61,18,8.7,2.06,1.22,3.26,0.0079,Yes,87.9,45.9

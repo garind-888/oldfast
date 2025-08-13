@@ -1,0 +1,20 @@
+# Ignore Word documents
+*.docx
+
+# Ignore Word temporary files
+~$*.docx 
+
+# Ignore PDF files
+*.pdf
+
+# Ignore PDF files
+*.pdf
+
+# Ignore image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg

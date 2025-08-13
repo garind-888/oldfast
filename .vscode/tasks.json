@@ -1,0 +1,74 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build All Documents",
+      "type": "shell",
+      "command": "pandoc -f markdown+raw_tex+fenced_divs --lua-filter=./help/pagebreak.lua -s paper.md --citeproc --bibliography=references.bib --csl=./help/eurointervention.csl --reference-doc=./help/template.docx -o paper.docx && pandoc -f markdown+raw_tex+fenced_divs --lua-filter=./help/pagebreak.lua -s supplements.md --citeproc --bibliography=references.bib --csl=./help/eurointervention.csl --reference-doc=./help/template.docx -o supplements.docx && pandoc -f markdown+raw_tex+fenced_divs --lua-filter=./help/pagebreak.lua -s cover-letter.md --citeproc --bibliography=references.bib --csl=./help/eurointervention.csl --reference-doc=./help/template-cover.docx -o cover-letter.docx",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Pandoc→Word",
+      "type": "shell",
+      "command": "pandoc",
+      "args": [
+        "-f",
+        "markdown+raw_tex+fenced_divs",
+        "--lua-filter=./help/pagebreak.lua",
+        "-s",
+        "paper.md",
+        "--citeproc",
+        "--bibliography=references.bib",
+        "--csl=./help/eurointervention.csl",
+        "--reference-doc=./help/template.docx",
+        "-o",
+        "paper.docx"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Pandoc→Word Supplements",
+      "type": "shell",
+      "command": "pandoc",
+      "args": [
+        "-f",
+        "markdown+raw_tex+fenced_divs",
+        "--lua-filter=./help/pagebreak.lua",
+        "-s",
+        "supplements.md",
+        "--citeproc",
+        "--bibliography=references.bib",
+        "--csl=./help/eurointervention.csl",
+        "--reference-doc=./help/template.docx",
+        "-o",
+        "supplements.docx"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Pandoc→Word Cover Letter",
+      "type": "shell",
+      "command": "pandoc",
+      "args": [
+        "-f",
+        "markdown+raw_tex+fenced_divs",
+        "--lua-filter=./help/pagebreak.lua",
+        "-s",
+        "cover-letter.md",
+        "--citeproc",
+        "--bibliography=references.bib",
+        "--csl=./help/eurointervention.csl",
+        "--reference-doc=./help/template-cover.docx",
+        "-o",
+        "cover-letter.docx"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

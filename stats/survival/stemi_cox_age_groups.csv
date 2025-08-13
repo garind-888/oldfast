@@ -1,0 +1,21 @@
+Endpoint,Age Group,HR vs Youngest,HR 95% CI,P-value
+30-day mortality,55-64,2.57,(0.91-7.24),0.0748
+30-day mortality,65-74,4.29,(1.55-11.88),0.0051
+30-day mortality,75-84,7.39,(2.6-21.0),0.0002
+30-day mortality,≥85,10.01,(3.07-32.71),0.0001
+1-year mortality,55-64,2.74,(0.98-7.63),0.0543
+1-year mortality,65-74,5.47,(2.03-14.7),0.0008
+1-year mortality,75-84,9.56,(3.5-26.07),0.0
+1-year mortality,≥85,15.58,(5.26-46.17),0.0
+5-year mortality,55-64,2.03,(0.98-4.2),0.0562
+5-year mortality,65-74,4.88,(2.47-9.64),0.0
+5-year mortality,75-84,7.9,(3.91-15.96),0.0
+5-year mortality,≥85,20.03,(9.41-42.61),0.0
+1-year CV mortality,55-64,2.17,(0.67-7.08),0.1988
+1-year CV mortality,65-74,6.49,(2.17-19.36),0.0008
+1-year CV mortality,75-84,9.66,(3.14-29.73),0.0001
+1-year CV mortality,≥85,19.21,(5.83-63.29),0.0
+5-year CV mortality,55-64,1.84,(0.77-4.35),0.1677
+5-year CV mortality,65-74,4.35,(1.94-9.74),0.0004
+5-year CV mortality,75-84,6.91,(3.01-15.86),0.0
+5-year CV mortality,≥85,17.64,(7.26-42.85),0.0
